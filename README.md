@@ -1,1 +1,1 @@
-
+Here you'll find some public code samples and information which I collected throughout my projects
