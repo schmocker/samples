@@ -15,12 +15,12 @@ steps:
   displayName: 'npm install'
 
 - script: |
-    ng build <name-of-the-package>
+    ng build my-package # change package name
   displayName: 'npm build'
 
 - task: Npm@1
   inputs:
     command: 'publish'
-    workingDir: 'dist/<name-of-the-package>'
+    workingDir: 'dist/my-package' # change package name
     publishRegistry: 'useFeed'
-    publishFeed: '<id-of-your-feed>'
+    publishFeed: '000a000a-000a-000a-0000-0a00a00aaa0' # change id
